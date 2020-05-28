@@ -1,0 +1,79 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+
+#my-carousel {
+  width: 40%;
+  height: 200px;
+  display: flex;
+}
+
+/* #my-carousel2 {
+  background-color: lightgrey;
+  width: 100px;
+  height: 100px;
+} */
+
+.containerGlobale {
+  background: lightblue;
+}
+.card {
+  width: 180px;
+  height: 180px;
+  margin: 10px;
+}
+
+#subtitle {
+  color: grey;
+}
+#title {
+  color: blue;
+}
+.fa-lightbulb {
+  background-color: blue;
+  color: white;
+  font-size: 35px;
+}
+div {
+  border: solid 0.5px black;
+}
+
+.prev, .next {
+    color: #565a5c;
+    font-size: 40px;
+    cursor: pointer;
+    /* display: none; */
+}
+
+/* #my-carousel:hover{
+  .prev, .next {display: block;}
+} */
+
+#cardTop {
+  width: 150px;
+  height: 60px;
+  background-color: grey;
+}
+
+#cardBottom {
+  background-color: white;
+  width: 150px;
+  height: 96px;
+}
+
+ /* .card img {
+    display: none;
+}
+ .card img.active {
+    display: inline-block;
+} */
+
+.active {
+  background-color: blue;
+}
+.latest {
+  position: relative;
+}
