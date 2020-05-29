@@ -15,5 +15,5 @@ Constraints:
 
 - The number of chunks returned by the “fake REST API” must be randomly decided inside the “fetchCards” function.(NA)
 
-** Title and Sub are populated via JS
-** Images are related to topic (Randomly)
+* Title and Sub are populated via JS
+* Images are related to topic (Randomly)
