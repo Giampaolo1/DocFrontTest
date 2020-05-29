@@ -58,5 +58,12 @@ function previousSlide (){
     // Altrimenti passa l active alla precedente
     posizioneimg.prev(".card").addClass("active");
   }
-
 }
+
+$(".containerGlobale").mouseover(function () {
+    $(".next, .prev").addClass("opac")
+})
+
+$(".containerGlobale").mouseleave(function () {
+    $(".next, .prev").removeClass("opac")
+})
