@@ -8,6 +8,33 @@ body {
   font-family: "Roboto";
 }
 
+.containerGlobale {
+  background: lightblue;
+}
+
+.containerTop {
+  margin: 10px;
+}
+
+.fa-lightbulb {
+  background-color: purple;
+  color: white;
+  font-size: 25px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+#title {
+  color: purple;
+}
+
+#subtitle {
+  color: grey;
+}
+
+/* -------------------------------------- */
+
 #my-carousel {
   width: 40%;
   height: 200px;
@@ -15,21 +42,15 @@ body {
   border: solid grey 0.5px;
 }
 
-/* #my-carousel2 {
-  background-color: lightgrey;
-  width: 100px;
-  height: 100px;
-} */
-
-.containerGlobale {
-  background: lightblue;
-}
-
-.card {
+.card, .card2 {
   width: 180px;
   height: 180px;
   margin: 10px;
   /* border: solid grey 0.5px; */
+}
+
+.card2{
+  display: none;
 }
 
 #cardTop {
@@ -43,62 +64,41 @@ body {
   width: 150px;
   height: 96px;
   color: purple;
-  font-size: 15px;
-}
-
-
-#subtitle {
-  color: grey;
-}
-#title {
-  color: purple;
-}
-.fa-lightbulb {
-  background-color: purple;
-  color: white;
-  font-size: 35px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .prev, .next {
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     cursor: pointer;
     /* display: none; */
     opacity: 0;
     border: solid grey;
     background-color: grey;
     /* position: absolute; */
+    margin: 10px;
+    margin-bottom: 30px;
 }
 
-/* #my-carousel:hover{
-  .prev, .next {display: block;}
-} */
-
-
-
- /* .card img {
-    display: none;
+.prev {
+  display: none;
 }
- .card img.active {
-    display: inline-block;
-} */
-
-.active {
-  background-color: blue;
-}
-
+/* -------------------------------------------- */
 .opac {
   opacity: 0.8;
 }
 
-.active1 {
-  background-color: yellow;
+.grey {
+  color: lightgrey;
 }
 
-/* .latest {
-  position: relative;
-} */
-
+.tag {
+  color: white;
+  background-color: black;
+  font-size: 12px;
+  opacity: 0.8;
+}
 
 /* div {
   border: solid 0.5px black;
