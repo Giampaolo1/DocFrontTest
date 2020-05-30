@@ -17,5 +17,5 @@ Constraints:
 
 -----------
 
-* Title and Sub are populated via JS
+* Title and Sub and Icon are populated via JS
 * Images are related to topic (Randomly)
