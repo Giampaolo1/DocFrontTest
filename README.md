@@ -4,8 +4,6 @@ Constraints:
 
 - Overlay arrows that dynamically appear on the left and right side of the carousel when mouse hover the carousel and only when there are hidden cards on that side
 
-- Scrolling by swiping (NA)
-
 - New chunk of items it's displayed by clicking the NEXT arrow and hide when clicking the PREV arrow
   (Delays applied)
 
