@@ -1,11 +1,7 @@
-// Javascript code must be properly structured and well commented.
-// The usage of ECMAScript 2015 new constructs (templates, classes, Promises),
- // Each instance has its own info (title, subtitle, icon)
- // the overlay arrows that dynamically appear on the left and right side of the carousel when mouse hover the carousel and only when there are hidden cards on that side.
 
+// Original Structure:
 
-
-//oggetto con proprietà
+//object with properties ORIGINAL
 var options1 = {
   container: "my-carousel",
   title : "Fresh and just uploaded content",
@@ -24,57 +20,66 @@ var options2 = {
   }
 }
 
-
-
-
-
-
-
-
-
-
+// Instruction on click:
 
 $( document ).ready(function() {
-  // Scelgo una freccia (next)
 
-  // $(".next").click(nextSlide);
-  //   // console.log("cliccato");
-  // $(".prev").click(previousSlide)
+  // ARROW NEXT FX
 
   $(".next").click(function(){
-     $(".card2").show(1000);
-     $(".prev").show(1000);
+     $(".card2").addClass("flex");
+     $(".prev").addClass("flex");
 
      $(".card").hide(1000);
      $(".next").hide();
 
-
      options2.fetchCards();
      document.getElementById('title').innerHTML=options2.title;
      document.getElementById('subtitle').innerHTML=options2.subtitle;
+     document.getElementById('icona').innerHTML='<i class="fab fa-slideshare"></i>';
+
+     // Load IMG on click (For Delay)
 
      document.getElementById('imgtop1').src="https://source.unsplash.com/150x60/?brand";
      document.getElementById('imgtop2').src="https://source.unsplash.com/150x60/?advert";
 
    });
 
+  // ARROW PREV FX
+
    $(".prev").click(function(){
-     $(".card2").hide(1000);
-     $(".prev").hide();
+     $(".card2").removeClass("flex");
+     $(".prev").removeClass("flex");
 
-
-     $(".card").show(1000);
+     $(".card").show(1667);
      $(".next").show();
-
 
      options1.fetchCards();
      // console.log(options1.container);
      document.getElementById('title').innerHTML=options1.title;
      document.getElementById('subtitle').innerHTML=options1.subtitle;
+     document.getElementById('icona').innerHTML='<i class="fas fa-lightbulb"></i>';
 
    });
 
 });
+
+// mouse OVER and LEAVE for the arrow
+
+$(".containerGlobale").mouseover(function () {
+    $(".next, .prev").addClass("opac")
+})
+
+$(".containerGlobale").mouseleave(function () {
+    $(".next, .prev").removeClass("opac")
+})
+
+
+
+
+
+
+
 
 // function nextSlide (){
 //
@@ -101,11 +106,3 @@ $( document ).ready(function() {
 //     posizioneimg.prev(".card").addClass("active");
 //   }
 // }
-
-$(".containerGlobale").mouseover(function () {
-    $(".next, .prev").addClass("opac")
-})
-
-$(".containerGlobale").mouseleave(function () {
-    $(".next, .prev").removeClass("opac")
-})

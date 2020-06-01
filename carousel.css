@@ -16,7 +16,7 @@ body {
   margin: 10px;
 }
 
-.fa-lightbulb {
+.fa-lightbulb, .fa-slideshare {
   background-color: purple;
   color: white;
   font-size: 25px;
@@ -36,9 +36,11 @@ body {
 /* -------------------------------------- */
 
 #my-carousel {
-  width: 40%;
+  width: 600px;
   height: 200px;
   display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
   border: solid grey 0.5px;
 }
 
@@ -46,7 +48,15 @@ body {
   width: 180px;
   height: 180px;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   /* border: solid grey 0.5px; */
+}
+
+.collectionCard {
+  box-shadow: 0 8px 6px -6px grey;
+  /* box-shadow:         2px 2px 0px 0px grey; */
 }
 
 .card2{
@@ -72,13 +82,15 @@ body {
     color: white;
     font-size: 30px;
     cursor: pointer;
-    /* display: none; */
     opacity: 0;
     border: solid grey;
     background-color: grey;
-    /* position: absolute; */
     margin: 10px;
-    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    /* position: absolute; */
 }
 
 .prev {
@@ -98,6 +110,15 @@ body {
   background-color: black;
   font-size: 12px;
   opacity: 0.8;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex {
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 /* div {
