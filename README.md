@@ -9,8 +9,6 @@ Constraints:
 
 - Card placeholders applied
 
-- The chunk size (e.g. 6 cards) is static and hardcoded inside the carousel component library
-
 - The number of chunks returned by the “fake REST API” must be randomly decided inside the “fetchCards” function (NA)
 
 -----------
